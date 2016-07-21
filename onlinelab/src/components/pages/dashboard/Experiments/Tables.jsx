@@ -11,6 +11,8 @@ var bodydata = [
   ['控制原理4', '下载', '预约'],
 ];
 
+var title = '实验台';
+
 var TableHeader = React.createClass({
   render: function() {
     var items = [];
@@ -28,7 +30,7 @@ var TableBody = React.createClass({
     var items = [];
     for (var i = 0; i < bodydata.length; i++) {
       items.push(
-              <tr className="gradeA odd" role="row">
+              <tr role="row">
               {
                   bodydata[i].map(function (col) {
                     return <td>{col}</td>
@@ -51,11 +53,11 @@ var Tables = React.createClass({
 
       <div>
         <div className="col-lg-12"> 
-          <PageHeader>实验台121122</PageHeader> 
+          <PageHeader>{title}</PageHeader> 
         </div>
 
         <div className="col-lg-12"> 
-          <Panel header={<span>实验台列表</span>} >
+          <Panel header={<span>{title}列表</span>} >
             <div> 
               <div className="dataTable_wrapper">
                 <div id="dataTables-example_wrapper" className="dataTables_wrapper form-inline dt-bootstrap no-footer">
