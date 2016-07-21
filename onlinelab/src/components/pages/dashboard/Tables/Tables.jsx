@@ -8,7 +8,7 @@ var Tables = React.createClass({
 
       <div>
         <div className="col-lg-12"> 
-          <PageHeader>Tables123</PageHeader> 
+          <PageHeader>Tables</PageHeader> 
         </div>
 
         <div className="col-lg-12"> 

@@ -1,25 +1,33 @@
-# antd-demo
+## OnlineLab written in react
 
-## Environment
+## Installation
+####1. Clone this project or Download that ZIP file
 
-```
-node >= 4
-```
-
-## Code Style
-
-https://github.com/airbnb/javascript
-
-## Develop
-
-```
-npm run dev
+```sh
+$ git clone https://github.com/OneTicketTech/OnlineLab_Frontend.git
 ```
 
-访问 http://127.0.0.1:8989
+####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
 
-## Build
+More details here
+https://nodejs.org/en/download/ 
 
+####3. On the command prompt run the following commands
+
+```sh
+$ cd `project-directory`
 ```
-npm run build
+```sh
+$ npm install 
 ```
+```sh
+$ npm start
+```
+
+####4. To build
+```sh
+$ npm run build
+```
+
+### Automation tools used
+- [Webpack](https://webpack.github.io/)
