@@ -8,7 +8,7 @@ var Tables = React.createClass({
 
       <div>
         <div className="col-lg-12"> 
-          <PageHeader>Tables</PageHeader> 
+          <PageHeader>Tables123</PageHeader> 
         </div>
 
         <div className="col-lg-12"> 
@@ -36,9 +36,10 @@ var Tables = React.createClass({
                         <thead>
                           <tr role="row"><th className="sorting_asc" tabIndex="0" aria-controls="dataTables-example" rowSpan="1" colSpan="1" aria-label="Rendering engine: activate to sort column descending" aria-sort="ascending" style={ {width: 265} }>Rendering engine</th><th className="sorting" tabIndex="0" aria-controls="dataTables-example" rowSpan="1" colSpan="1" aria-label="Browser: activate to sort column ascending" style={ {width: 321} }>Browser</th><th className="sorting" tabIndex="0" aria-controls="dataTables-example" rowSpan="1" colSpan="1" aria-label="Platform(s): activate to sort column ascending" style={ {width: 299} }>Platform(s)</th><th className="sorting" tabIndex="0" aria-controls="dataTables-example" rowSpan="1" colSpan="1" aria-label="Engine version: activate to sort column ascending" style={ {width: 231} }>Engine version</th><th className="sorting" tabIndex="0" aria-controls="dataTables-example" rowSpan="1" colSpan="1" aria-label="CSS grade: activate to sort column ascending" style={ {width: 180} }>CSS grade</th></tr>
                         </thead>
-                        <tbody>               
+                        <tbody>
+
                           <tr className="gradeA odd" role="row">
-                            <td className="sorting_1">Gecko</td>
+                            <td className="sorting_1">Gecdo</td>
                             <td>Firefox 1.0</td>
                             <td>Win 98+ / OSX.2+</td>
                             <td className="center">1.7</td>
