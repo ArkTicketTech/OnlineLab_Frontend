@@ -19,8 +19,6 @@ import DashboardMorrisjsChartsPage from "../components/pages/dashboard/MorrisjsC
 import LoginPage from "../components/pages/Login";
 import LogoutPage from "../components/pages/Logout";
 import DashboardExperimentPage from "../components/pages/dashboard/Experiments";
-import DashboardReservedExperimentPage from "../components/pages/dashboard/Experiments";
-import DashboardCompletedExperimentPage from "../components/pages/dashboard/Experiments";
 
 var Routes = React.createClass({
 
@@ -41,9 +39,7 @@ var Routes = React.createClass({
               <Route name="dashboard.icons" path="/icons" handler={DashboardIconsPage} />
               <Route name="dashboard.grid" path="/grid" handler={DashboardGridPage} />
               <Route name="dashboard.blank" path="/blank" handler={DashboardBlankPage} />
-              <Route name="dashboard.experiments" path="/experiment" handler={DashboardExperimentPage} />
-              <Route name="dashboard.reserved" path="/reserved" handler={DashboardReservedExperimentPage} />
-              <Route name="dashboard.completed" path="/completed" handler={DashboardCompletedExperimentPage} />
+              <Route name="dashboard.experiments" path="/experiment/:para" handler={DashboardExperimentPage} />
               <DefaultRoute name="dashboard.default" handler={DashboardHomePage} />
             </Route>
             <Route name="login" path="/login" handler={LoginPage} />
