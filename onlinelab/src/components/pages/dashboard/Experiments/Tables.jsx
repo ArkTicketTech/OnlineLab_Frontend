@@ -1,20 +1,11 @@
 import React, { PropTypes, Component } from 'react';
 import {Pagination, Panel, Well, Button, PageHeader} from "react-bootstrap";
 
-var headerdata = ['实验名称', '实验说明', '操作'];
 
-var bodydata = [
-  ['控制原理', '下载', '预约'],
-  ['控制原理1', '下载', '预约'],
-  ['控制原理2', '下载', '预约'],
-  ['控制原理3', '下载', '预约'],
-  ['控制原理4', '下载', '预约'],
-];
-
-var title = '实验台';
 
 var TableHeader = React.createClass({
   render: function() {
+    var headerdata = this.props.headerdata;
     var items = [];
     for (var i = 0; i < headerdata.length; i++) {
       items.push(<th key={i}>{headerdata[i]}</th>);
@@ -28,6 +19,7 @@ var TableHeader = React.createClass({
 var TableBody = React.createClass({
   render: function() {
     var items = [];
+    var bodydata = this.props.bodydata;
     for (var i = 0; i < bodydata.length; i++) {
       items.push(
               <tr role="row">
@@ -49,6 +41,18 @@ var TableBody = React.createClass({
 
 var Tables = React.createClass({
   render: function() {
+    var para = this.props.params.para;
+
+    var headerdata = ['实验名称', '实验说明', '操作'];
+    var bodydata = [
+      ['控制原理', '下载', '预约'],
+      ['控制原理1', '下载', '预约'],
+      ['控制原理2', '下载', '预约'],
+      ['控制原理3', '下载', '预约'],
+      ['控制原理4', '下载', '预约'],
+    ];
+    var title = '实验台';
+
     return (
 
       <div>
@@ -66,9 +70,9 @@ var Tables = React.createClass({
                     <div className="col-sm-12">
                       <table className="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example" role="grid" aria-describedby="dataTables-example_info">
                         <thead>
-                          <TableHeader></TableHeader>
+                          <TableHeader headerdata={headerdata}></TableHeader>
                         </thead>
-                        <TableBody></TableBody>            
+                        <TableBody bodydata={bodydata}></TableBody>            
                       </table>
                     </div>
                   </div>

@@ -8,7 +8,6 @@ var PreTables = React.createClass({
   bundle: require('bundle?lazy!./Tables.jsx'),
 
   preRender: function () {
-  	//alert(this.props.params.experiment);
   	return <div></div>;
   }
 });
