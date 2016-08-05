@@ -180,13 +180,13 @@ var HomePage = React.createClass({
                 */
                 }
                   <li> 
-                    <Link to="dashboard.experiments"><i className="fa fa-edit fa-fw"></i> 预约实验</Link> 
+                    <Link to="dashboard.experiments" params={{para:"all"}}><i className="fa fa-edit fa-fw"></i> 预约实验</Link> 
                   </li>
                   <li> 
-                    <Link to="dashboard.reserved"><i className="fa fa-edit fa-fw"></i> 已预约实验</Link> 
+                    <Link to="dashboard.experiments" params={{para:"reserved"}}><i className="fa fa-edit fa-fw"></i> 已预约实验</Link> 
                   </li>
                   <li> 
-                    <Link to="dashboard.completed"><i className="fa fa-edit fa-fw"></i> 已完成实验</Link> 
+                    <Link to="dashboard.experiments" params={{para:"completed"}}><i className="fa fa-edit fa-fw"></i> 已完成实验</Link> 
                   </li>
 
                 </ul>
